@@ -13,9 +13,9 @@
         <fieldset>
             <legend>Personal Data:</legend>
             DUI:
-            <input type="text" id="DUI" maxlength="9" minlength="9" placeholder="005251986"> First Name:
-            <input type="text" id="FN" placeholder="First Name"> Last Name:
-            <input type="text" id="LN" placeholder="Last Name"> Gender
+            <input type="text" id="DUI" maxlength="9" minlength="9" placeholder="005251986" required pattern="[0-9]{9}"> First Name:
+            <input type="text" id="FN" placeholder="First Name" required required pattern="[a-Z]"> Last Name:
+            <input type="text" id="LN" placeholder="Last Name" required required pattern="[a-Z]"> Gender
 
             <input type="radio" id="M" name="Gender" />
             <label for="M">M</label>
@@ -25,9 +25,9 @@
             <br>
 
             <br> Contact Number:
-            <input type="text" id="tel"> Birthdate:
+            <input type="text" id="tel" required pattern="[0-9]{8}"> Birthdate:
 
-            <input type="date"> Civil Status:
+            <input type="date" required min="2000-01-01" max="2018-12-31"> Civil Status:
             <select id="CS">
                 <option value="Single">Single</option>
                 <option value="Married">Married</option>
@@ -35,17 +35,17 @@
             </select>
             Image
             <label for="avatar">Profile picture:</label>
-            <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg" />
+            <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg" required />
 
 
         </fieldset>
         <fieldset>
             <legend>Work Experience</legend>
-            <textarea name="workExperience" id="WE" cols="255" rows="12" placeholder="Experience"></textarea>
+            <textarea name="workExperience" id="WE" cols="255" rows="12" placeholder="Experience" required></textarea>
         </fieldset>
         <fieldset>
             <legend>Academic Training</legend>
-            <textarea name="Academic Training" id="AT" cols="255" rows="12" placeholder="Academic Training"></textarea>
+            <textarea name="Academic Training" id="AT" cols="255" rows="12" placeholder="Academic Training" required></textarea>
         </fieldset>
         <fieldset>
             <fieldset>
@@ -67,7 +67,10 @@
 
             </fieldset>
         </fieldset>
-        <input type="submit" value="Send Request">
+        <input type="submit" value="Send">
+        <a href="index.html">
+            <button type="menu" value="Cancel">Cancel</button>
+        </a>
     </form>
 
 </body>
