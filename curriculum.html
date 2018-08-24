@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Curriculum</title>
+</head>
+
+<body>
+    <form action="" method="GET" class="form">
+        <fieldset>
+            <legend>Personal Data:</legend>
+            DUI:
+            <input type="text" id="DUI" maxlength="9" minlength="9" placeholder="005251986"> First Name:
+            <input type="text" id="FN" placeholder="First Name"> Last Name:
+            <input type="text" id="LN" placeholder="Last Name"> Gender
+
+            <input type="radio" id="M" name="Gender" />
+            <label for="M">M</label>
+
+            <input type="radio" id="F" name="Gender" />
+            <label for="F">F</label>
+            <br>
+
+            <br> Contact Number:
+            <input type="text" id="tel"> Birthdate:
+
+            <input type="date"> Civil Status:
+            <select id="CS">
+                <option value="Single">Single</option>
+                <option value="Married">Married</option>
+                <option value="Divorced">Divorced</option>
+            </select>
+            Image
+            <label for="avatar">Profile picture:</label>
+            <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg" />
+
+
+        </fieldset>
+        <fieldset>
+            <legend>Work Experience</legend>
+            <textarea name="workExperience" id="WE" cols="255" rows="12" placeholder="Experience"></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Academic Training</legend>
+            <textarea name="Academic Training" id="AT" cols="255" rows="12" placeholder="Academic Training"></textarea>
+        </fieldset>
+        <fieldset>
+            <fieldset>
+                <legend>Programming Languages</legend>
+                <input type="checkbox" name="Languages" id="Java">Java
+                <input type="checkbox" name="Languages" id="C#">C#
+                <input type="checkbox" name="Languages" id="Python">Python
+                <input type="checkbox" name="Languages" id="C++">C++
+                <input type="checkbox" name="Languages" id="Ruby">Ruby
+            </fieldset>
+            <fieldset>
+                <legend>Web Technologies</legend>
+                <input type="checkbox" name="Languages" id="HTML5">HTML5
+                <input type="checkbox" name="Languages" id="CSS">CSS/CSS3
+                <input type="checkbox" name="Languages" id="materialize Css">materialize Css
+                <input type="checkbox" name="Languages" id="JavaScript">JavaScript
+                <input type="checkbox" name="Languages" id="Node.js">Node.js
+                <input type="checkbox" name="Languages" id="Spring MVC">Spring MVC
+
+            </fieldset>
+        </fieldset>
+        <input type="submit" value="Send Request">
+    </form>
+
+</body>
+
+</html>
